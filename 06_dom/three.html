@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viraaj Pal</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+</body>
+<script>
+    const div = document.createElement('div')
+    console.log(div);
+    div.className = "main"
+    div.id = Math.round(Math.random() * 10 + 1)
+    div.setAttribute("title", "generated title") // phle value override hoti h isme toh ek round bachta hai isko use krne par so  try to use more and more while coding.
+    div.style.color = "red"
+    div.style.backgroundColor = "light-green"
+    div.style.padding = "10px"
+    // div.innerText = "Viraaj Pal" // phle value leke aayega fir override krega 
+    const addText = document.createTextNode("Viraaj Pal!")
+    div.appendChild(addText)
+    document.body.appendChild(div)
+</script>
+</html>

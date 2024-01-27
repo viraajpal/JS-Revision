@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Viraaj Pal</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div> 
+    </div>
+</body>
+<script>
+    const parent = document.querySelector('.parent')
+    // console.log(parent); // This will select the complete material of the parent node.
+    // console.log(parent.children); // This will give us all the index value of the children node.
+    // console.log(parent.children[1].innerHTML); // This will give us the value which will be stored in the children node.
+
+    for(let i = 0; i < parent.children.length; i++){
+        // console.log(parent.children[i].innerHTML); // this will give us all the value of the specified index which will be in the parent node.
+    }
+    parent.children[1].style.color = "red"
+    // console.log(parent.firstElementChild);  // this will give us the first element of the node.
+    // console.log(parent.lastElementChild); // this will give us the last element  of the node.
+
+    const dayOne = document.querySelector('.day');
+    // console.log(dayOne); 
+    // console.log(dayOne.parentElement); // It will give us compete parent node.
+    // console.log(dayOne.nextElementSibling); // this will give us the next sibling from the parent node.
+    // console.log(parent.children[0].innerHTML); // This will give us the value of the specified index number which will be stored in the children node.
+
+    console.log("Nodes: ", parent.childNodes);
+
+</script>
+</html>
